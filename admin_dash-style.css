@@ -1,0 +1,391 @@
+*{
+	background: #B6FFB8;
+	font-family: sans serif;
+	margin: 0;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	height: 100vh;
+	overflow: auto ;
+}
+
+.admin-menu{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	border: 1px solid black;
+	padding: 20px;
+	height: auto;
+	width: auto;
+	background: #1F6222;
+	!background: #56B5FF;
+	box-shadow: 0px 0px 20px black;
+}
+
+.lgo{
+	background: none;
+	flex-grow: 1;
+	margin-top: auto;
+}
+
+.lgo-button{
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+}
+
+#heading{
+	margin: 0;
+	padding: 0;
+	padding-top: 25px;
+	background: none;
+}
+
+.admin-menu div h2{
+	margin: 0px -5px 0px 0px;
+	color: #8CE591;
+	background: none;
+	font-size: 54px;
+	font-style: bold; 
+	font-family: Fredoka One, cursive;
+	text-shadow: 0px 0px 5px black;
+}
+
+.admin-menu div h1{
+	margin-right: -10px;
+		!letter-spacing: 0.3em;
+	font-size: 34px;
+	background: none;
+	color: #8CE591;
+	font-family: rajdhani, sans-serif;
+	text-shadow: 0px 0px 5px black;
+}
+.admin-menu button{
+	text-align: left;
+	border: none;
+}
+
+.opt{
+	padding: 10px;
+	margin-top: 15px;
+	border-radius: 3px;
+	background: none;
+	color: white;
+	font-size: 16px;
+	font-family: Noto Serif;
+}
+
+button.opt{
+	font-size: 18px;
+	background: none;
+	color: white;
+}
+
+button.active{
+	border: 1px solid #57DB69;
+	color: #8fff9e;
+}
+
+.action-body{
+	flex-grow: 7;
+	height: auto;
+	margin-top: 40px;
+	margin-left: 20px;
+	padding: 20px;	
+}
+
+.dash-counts{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 30px 30px 0px -20px;
+	padding: 0px;
+	text-align: center;
+	overflow: auto;
+	width: auto;
+}
+
+.dash-plates{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	flex: 1;
+	width: auto;
+	height: 170px;
+	margin: 20px;
+	padding: 20px;
+	border: 2px solid grey;
+	border-radius: 5px;
+	justify-content: center;
+	background: white;
+	box-shadow: 0px 0px 10px rgba(0, 120, 120, 0.5);
+}
+
+.dash-plates label{
+	font-size: 16px;
+	margin: 5px; 
+	margin-top: -15px;
+	background: white;
+}
+
+.dash-plates p{
+	font-size: 32px;
+	background: white;
+}
+
+.list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: auto;
+	margin: -10px;
+	margin-right: 40px;
+	height: auto;
+}
+
+.students{
+	flex-grow: 1;
+	height: 300px;
+	border: 2px solid black;
+	padding: none;
+	overflow: auto;
+	width: auto;
+	margin: 10px;
+}
+
+.studentss{
+	flex-grow: 1;
+	height: 300px;
+	border: 2px solid black;
+	padding: none;
+	overflow: auto;
+	width: auto;
+	margin: 10px;
+}
+
+.menu{
+	display: none;
+	margin-top: -25px;
+	margin-left: auto;
+	width: 30px;
+	height: 30px;
+	background: none;
+}
+
+.opt:hover{
+	border-radius: 10px;
+	background: #1a8528;
+	cursor: pointer;
+}
+
+.voters-data{
+	margin: 30px 30px 0px 0px;
+	padding: 0px;
+	display: none;
+}
+
+.voters-data label{
+	margin-left: 15px; 
+	margin-bottom: 0px;
+	background: #C4C4C4;
+	text-align: center;
+	padding: 4px;
+	font-size: 20px;
+	border: 2px solid black;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.data-editor{
+	width: 70%;
+	margin-top: -30px;
+	padding: 50px 0px 0px 0px;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+.data-editor tr{
+	margin: 0px;
+}
+
+.data-editor tr td{
+	padding: 5px 30px;
+}
+
+.input-update-data{
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 5px 10px;
+	text-align: center;
+}
+
+.vcList{
+	height: 650px;
+	width: 95%;
+	margin-top: 20px;
+	border: 2px solid black;
+	overflow-y: scroll;
+}
+.res{
+	height: 80%;
+}
+
+table.listvc{
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+th{
+	position: sticky;
+	top: 0;
+	background: #17c52e;
+	height: 50px;
+	font-size: 24px;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+.listvc tr th:nth-child(1){width: 15%;}
+.listvc tr td:nth-child(1){height: 30px;}
+.listvc tr td:nth-child(2){width: 30%;}
+.listvc tr td:nth-child(3){width:25%;}
+.listvc tr td:nth-child(4){width:15%;}
+.listvc tr td:nth-child(5){width:15%;}
+tr{
+	padding: 10px;
+	border-bottom: 1px solid black;
+}
+.listvc tr td{
+	padding: 10px;
+	background: white;
+	border: 1px solid black;
+}
+td button{
+	width: 70px;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin: 3px;
+
+}
+.listvc tr:hover .listvc tr td{
+	background: yellow;
+}
+
+.addVoter{
+	width: 150px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	border: 2px solid black;
+	border-radius: 20px;
+	font-size: 18px;
+	background: #1a8528;
+	color: white;
+}
+.addVoter img{
+	width: 30px;
+	height: 30px;
+	background: #1a8528;
+	border-radius: 20px;
+	margin-right: 10px;
+}
+.regVoter{
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 10px;
+	width: 90%;
+	background: white;
+	display: none;
+}
+.regVoter div{
+	background: white;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px;
+	justify-content: left;
+	align-items: center;
+}
+.regVoter div button{
+	margin: 10px 10px 0px 0px;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 5px;
+	width: 200px;
+	font-size: 16px;
+}
+.regVoter div label{
+	width: 200px;
+	font-size: 18px;
+	background: none;
+}
+.regVoter div input, .regVoter div select{
+	outline: none;
+	border: none;
+	border-bottom: 2px solid black;
+	background: white;
+	padding: 5px;
+	margin: 4px;
+	width: 300px;
+	margin-left: 10px;
+	font-size: 22px;
+}
+.regVoter div .regVoter div input{
+	justify-content: right;
+}
+
+@media screen and (max-width: 1200px) {
+	.dash-plates{
+		width: 180px;
+		height: 120px;
+	}
+	.opt{
+		display: none;
+		text-align: center;
+	}
+	#heading{
+		display: flex;
+		flex-direction: row;
+	}
+	#heading h1{
+		margin-top: 20px;
+		margin-left: 10px;
+		font-size: 30px;
+	}
+	#heading h2{
+		font-size: 48px;
+	}
+	#menuHide{
+		display: none;
+	}
+	.menu{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px){
+	#heading{
+		flex-direction: column;
+	}
+	#heading h1{
+		font-size: 28px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	#heading h2{
+		font-size: 40px;
+	}
+	.opt{
+		display: none;
+	}
+	#menuHide{
+		display: none;
+	}
+	.menu{
+		display: block;
+	}
+	th{font-size: 18px;}
+	th{width: auto;}
+	td{font-size: 15px;}
+}

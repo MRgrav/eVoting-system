@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="user_voting_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+        <div id="bannerBack">
+            <div class="banner">
+                <h1>VOTE</h1>
+                <hr/>
+                <ul class="condT">
+                    <li>This is an online, internet based voting sysytem.</li>
+                    <li>Voters must have login ID and password.</li>
+                    <li>Voters can vote, only when it is live.</li>
+                    <li>Once Vote has been done, it can not be changed.</li>
+                    <li>Voters must select one of the each group before submiting.</li>
+                </ul>
+                <div class="agreeV">
+                    <input class="checkB" type="checkbox" id="checkB" required><label for="checkB"> I am agree to the terms and conditions.</label>
+                </div>
+                <hr/>
+                <button id="voteNow">Vote Now</button>
+            </div>
+        </div>
+
+        <div id="profiled">
+            <div>
+                <img src="media/person.png">
+                <div id="sName">e-Voting Sysytem</div>
+                <img class="menu" id="menuShow" src="media/more.png">
+				<img class="menu" id="menuHide" src="media/less.png">
+            </div>
+            <div id="Vdata">
+                <b>Name :</b><label>Gaurav Gogoi</label>
+                <b>Voter ID :</b><label>BVR1212687</label>
+                <b>Vote Status :</b><label id="Vstatus">Not Voted</label>
+                <hr>
+                <button>Logout</button>
+            </div>
+        </div>
+        <div class="vote_area">
+            <div>
+                <h3>Vote Here</h3>
+            </div>
+            <div class="votingDiv">
+                <div class="voteGroup">
+                    <h2>Position</h2>
+                    <div><input type="radio" id="a1" name="pos1"><label for="a1">a23</label></div>
+                    <div><input type="radio" id="a2" name="pos1"><label for="a2">a22</label></div>
+                </div>
+                <div class="voteGroup">
+                    <h2>Position</h2>
+                    <div><input type="radio" id="a11" name="pos2"><label for="a11">a23</label></div>
+                    <div><input type="radio" id="a22" name="pos2"><label for="a22">a22</label></div>
+                </div>
+                <div class="voteGroup">
+                    <h2>Position</h2>
+                    <div><input type="radio" id="a12" name="pos3"><label for="a12">a23</label></div>
+                    <div><input type="radio" id="a22" name="pos3"><label for="a22">a22</label></div>
+                </div>
+                <div class="voteGroup">
+                    <h2>Position</h2>
+                    <div><input type="radio" id="a1" name="pos1"><label for="a1">a23</label></div>
+                    <div><input type="radio" id="a2" name="pos1"><label for="a2">a22</label></div>
+                </div>
+                <div class="voteGroup">
+                    <h2>Position</h2>
+                    <div><input type="radio" id="a11" name="pos2"><label for="a11">a23</label></div>
+                    <div><input type="radio" id="a22" name="pos2"><label for="a22">a22</label></div>
+                </div>
+                <div class="voteGroup">
+                    <h2>Position</h2>
+                    <div><input type="radio" id="a12" name="pos3"><label for="a12">a23</label></div>
+                    <div><input type="radio" id="a22" name="pos3"><label for="a22">a22</label></div>
+                </div>
+            </div>
+            <div class="voteSubmition">
+                <div>
+                    <input type="checkbox" id="chk"><label for="chk">I agree to my votes</label>
+                </div>
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let menu=document.getElementById('menuShow')
+        let menu2=document.getElementById('menuHide')
+        let userData=document.getElementById('Vdata')
+        let GoVote=document.getElementById('voteNow')
+        let backB=document.getElementById('bannerBack')
+        let pTab=document.getElementById('profiled')
+
+        menu.onclick=function(){
+            userData.style.display='flex';
+            menu.style.display='none';
+            menu2.style.display='block';
+        }
+        menu2.onclick=function(){
+            userData.style.display='none';
+            menu.style.display='block';
+            menu2.style.display='none';
+        }
+        GoVote.onclick=function(){
+            backB.style.display='none';
+            style.overflow='scroll';
+            pTab.style.top='0';
+            pTab.style.position='sticky';
+        }
+    </script>
+</body>
+</html>

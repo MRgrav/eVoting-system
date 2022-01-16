@@ -136,6 +136,25 @@ button.active{
 	background: white;
 }
 
+#voteSetup, #voteReset{
+	width: auto;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 10px;
+	margin-right: 20px;
+	font-size: 16px;
+}
+.voteStarter{
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 0px;
+	height: auto;
+	width: auto;
+	margin-right: 30px;
+	white-space: nowrap;
+}
+
 .list{
 	display: flex;
 	flex-direction: row;
@@ -335,7 +354,7 @@ td button{
 	justify-content: right;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 	.dash-plates{
 		width: 180px;
 		height: 120px;
@@ -343,6 +362,9 @@ td button{
 	.opt{
 		display: none;
 		text-align: center;
+	}
+	.action-body{
+		height: 100vh;
 	}
 	#heading{
 		display: flex;
@@ -364,7 +386,7 @@ td button{
 	}
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 668px){
 	#heading{
 		flex-direction: column;
 	}
@@ -386,6 +408,5 @@ td button{
 		display: block;
 	}
 	th{font-size: 18px;}
-	th{width: auto;}
 	td{font-size: 15px;}
 }

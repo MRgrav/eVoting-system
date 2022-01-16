@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="user_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+        <div id="login_form">
+            <b>LOGIN</b>
+            <hr/>
+            <div>
+                <input id="Login_id" type="text" required="required"><label>ID</label>
+            </div>
+            <div>
+                <input id="pswd" type="password" required="required"><label>Password</label>
+            </div>
+            <div class="btn_act">
+                <button id="cnl">Cancel</button><button type="submit" id="lgn" disabled="disabled">Login</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let login=document.getElementById('lgn')
+        let frm=document.getElementById('login_form')
+        let lgnid=document.getElementById('Login_id')
+        let pwd=document.getElementById('pswd')
+
+        frm.addEventListener('input', () => {
+            if (lgnid.value.length > 0 ||
+			pwd.value.length > 0 
+    		){
+			    login.removeAttribute('disabled');
+		    }else{
+			    login.setAttribute('disabled','disabled');
+		    }
+        });        
+    </script>
+</body>
+</html>
